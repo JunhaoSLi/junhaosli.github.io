@@ -3,7 +3,7 @@ h1, h4 {
     padding: 0;
     font-family: 'Ubuntu';
 }
-
+/* yooo */
 
 h1 { font-style: oblique; }
 
@@ -26,4 +26,21 @@ h1 { font-style: oblique; }
   min-width: 50%;
   min-height: 50%;
   opacity: 0.5;
+}
+
+.list_heading {
+    margin-bottom:0px;
+}
+
+ul {
+    margin:0px;
+}
+
+.list_footer {
+    margin-top:4px;
+}
+
+#aster {
+    font-style:italic;
+    font-size:9px;
 }
