@@ -10,20 +10,34 @@
     <div id="bg">
         <img src="assets/cheesebackground.jpg" alt="">
     </div>
+    <div id="grey_container">
+        <h1> The one site for fans, friends, and lovers of Junhao Li </h1>
+        <img id="profile_pic" src="http://ieee.northwestern.edu/assets/headshots/jun.jpg" onclick="changeImage()" alt="">
+        <h4> "I'd call myself a savant if savant meant really cool guy"</h4>
+        <p>Welcome to the best place on the web for Junhao info, pics, and news.</p>
+        <p>
+            Since his birth in 1997, Junhao Li has shocked the world with his death-defying, mind-blowing feats of grandeur. Breaking countless records, his achievements
+            have inspired individuals around the world to reach higher. Some call him an absolute madman; others call him a genius
+        </p>
+        <p class="list_heading"> Feats of Greatness:</p>
+        <ul>
+            <li>Chugged a Dr. Pepper can</li>
+            <li>Guessed a dice roll correctly three times in a row</li>
+            <li>Did a backflip*</li>
+        </ul>
+        <h6 class="list_footer" id="asterisk">*all backflips by Junhao Li are performed underwater</h6>
+    </div>
+    <script language="javascript">
+    function changeImage() {
 
-    <h1 align="center"> The one site for fans, friends, and lovers of Junhao Li </h1>  
-    &nbsp
-    <div align="center"> <img src="assets\profile_pic.jpg"> </div>
-    &nbsp
-    <h4 align="center"> "I'd call myself a savant if savant meant really cool guy"</h4>
-    <p>Welcome to the best place on the web for Junhao info, pics, and news.</p>
-    <p>Since his birth in 1997, Junhao Li has shocked the world with his death-defying, mind-blowing feats of grandeur. Breaking countless records, his achievements
-    have inspired individuals around the world to reach higher. Some call him an absolute madman; others call him a genius</p>
-    <p class="list_heading">Past Feats:</p>
-    <ul>
-        <li>Chugged a Dr. Pepper can</li>
-        <li>Guessed a dice roll correctly three times in a row</li>
-        <li>Did a backflip*</li>
-    </ul>
-    <h6 class="list_footer" id="aster">*all backflips by Junhao Li are performed underwater</h6>
+        if (document.getElementById("profile_pic").src == "http://www.freedigitalphotos.net/images/img/homepage/87357.jpg")
+        {
+            document.getElementById("profile_pic").src = "http://ieee.northwestern.edu/assets/headshots/jun.jpg";
+        }
+        else
+        {
+            document.getElementById("profile_pic").src = "http://www.freedigitalphotos.net/images/img/homepage/87357.jpg";
+        }
+    }
+    </script>
 </body>
