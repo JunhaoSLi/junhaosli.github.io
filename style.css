@@ -1,68 +1,68 @@
+html, body {
+  height:100%;
+  margin:0;
+}
+
 body {
-    margin:0;
-    padding:0;
+  background-color: rgba(51, 55, 69, 0.8);
 }
 
-#bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
-  z-index: -2;
+header {
+  padding: 15px 0px 30px; 
+  background-color: white;
+  font-family: Palatino, "Palatino Linotype", serif;
+  text-align: center;
 }
 
-#bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
-  opacity: 0.5;
+header h1, header h2 {
+  margin: 0;
 }
 
-
-#grey_container {
-    position:relative;
-    top:30px;
-    margin:auto;
-    padding:20px 100px;
-    width:60%;
-    height:auto;
-    border:5px solid darkgrey;
-    background:rgba(211, 211, 211,0.75);
-   /* opacity:0.5;
-    filter: alpha(opacity=50); */
+#profile-pic {
+  margin: auto;
+  padding: 16px 0px 10px;
+  width: 169px;
+  height: 169px;
 }
 
-#profile_pic {
-    margin:auto;
+#biography {
+  display: table;
+  margin: 0 auto;
+  width: 800px;
 }
 
-h1, h4 {
-    font-family: 'Ubuntu';
-    text-align:center;
+.bioblock {
+  display: inline-block;
+  vertical-align: top;
+  margin: 30px;
+  padding: 20px;
+  width: 300px;
 }
 
-h1 { font-style: oblique; }
-
-
-.list_heading {
-    margin-bottom:0px;
+.bioblock p {
+  margin: 0;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 20px;
 }
 
-ul {
-    margin: 0px;
+#one {
+  background-color: rgba(234, 46, 73, 0.901961);
 }
 
-.list_footer {
-    margin-top:4px;
+#two {
+  background-color: rgba(246, 247, 146, 0.901961);
 }
 
-#asterisk {
-    font-style:italic;
-    font-size:9px;
+#three {
+  background-color: rgb(119, 196, 211);
 }
+
+#four {
+  background-color: rgb(227, 233, 234);
+}
+
+/* rgba(246, 247, 146, 0.901961) - yellow
+   rgba(234, 46, 73, 0.901961) - red
+   rgb(119, 196, 211) - blue
+   rgba(51, 55, 69, 0.901961) - black
+*/
