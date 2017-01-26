@@ -8,57 +8,71 @@ body {
 }
 
 header {
-  padding: 15px 0px 30px; 
+  padding-bottom: 1rem;
   background-color: white;
   font-family: Palatino, "Palatino Linotype", serif;
   text-align: center;
 }
 
-header h1, header h2 {
+h1, h2, p {
   margin: 0;
 }
 
 #profile-pic {
   margin: auto;
-  padding: 16px 0px 10px;
-  width: 169px;
-  height: 169px;
+  padding: 1rem 0rem 0.6rem;
+  width: 8.75rem;
+  height: 8.75rem;
 }
 
 #biography {
   display: table;
   margin: 0 auto;
-  width: 800px;
+  text-align:center;
+}
+
+#left, #right {
+  display:inline-block;
+  width:30.5rem;
+  vertical-align: top;
 }
 
 .bioblock {
   display: inline-block;
-  vertical-align: top;
-  margin: 30px;
-  padding: 20px;
-  width: 300px;
+  margin:  1rem 1rem;
+  padding: 1.4rem;
+  width: 25.7rem;
+  text-align: left;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 1.25rem;
 }
 
-.bioblock p {
-  margin: 0;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  font-size: 20px;
+#one, #three {
+  margin-top: 2rem;
 }
 
 #one {
-  background-color: rgba(234, 46, 73, 0.901961);
+  background-color: rgb(255, 144, 140);
 }
 
 #two {
-  background-color: rgba(246, 247, 146, 0.901961);
+  background-color: rgb(137, 220, 237);
 }
 
 #three {
-  background-color: rgb(119, 196, 211);
+  background-color: rgb(254, 255, 173);
 }
 
 #four {
   background-color: rgb(227, 233, 234);
+}
+
+footer {
+  padding: 1rem 0rem;
+  background-color: rgb(59, 63, 71);
+  font-size: 0.8rem;
+  text-align: center;
+  color:white;
 }
 
 /* rgba(246, 247, 146, 0.901961) - yellow
