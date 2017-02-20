@@ -1,0 +1,209 @@
+body {
+	background-color: #3e3f52;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1, p {
+	margin: 0;
+}
+
+#overlay{
+	opacity:    0; 
+ 	background: #000; 
+ 	width:      100%;
+  	height:     100%; 
+  	z-index:    -1;
+  	top:        0; 
+  	left:       0; 
+  	position:   fixed; 
+}
+
+/* button styling: get rid of all built-in button graphics and add some stuff to our buttons  */
+
+button {
+	background: none;
+	border: none;
+	margin: 0rem 1rem;
+	padding: 0;
+	cursor: pointer;
+}
+
+button:focus {
+	outline: 0;
+}
+
+
+/*********/
+/* Title */
+/*********/
+
+#title {
+	text-align: center;
+	font-size: 4.2rem;
+	font-weight: 400;
+	color: #b7b7b7;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+/*********************/
+/* Appliance buttons */
+/*********************/
+.app_icons{
+	display: block;
+	text-align: center;
+	height: 1.75rem;
+}
+
+.app_icon{
+	width: 1.5rem;
+	height: 1.75rem;
+}
+
+.row1 {
+	position: relative;
+	text-align: center;
+	vertical-align: top;
+	margin-top: 0.2rem;
+}
+
+.row2 {
+	position: relative;
+	text-align: center;
+	margin-top: 2.8rem;
+	margin-bottom: 1rem;
+}
+
+.app_btn{
+	position: relative;
+}
+
+.app_pic {
+	width: 21rem;
+	height: 13.75rem;
+}
+
+#faucet:hover {
+	content: url("../appliances/faucet_hover.png");
+}
+
+#washingmachine:hover {
+	content: url("../appliances/washingmachine_hover.png");
+}
+
+#dishwasher:hover {
+	content: url("../appliances/dishwasher_hover.png");
+}
+
+#toilet:hover {
+	content: url("../appliances/toilet3_hover.png");
+}
+
+#shower:hover {
+	content: url("../appliances/shower_hover.png");
+}
+
+#other:hover {
+	content: url("../appliances/blank_hover.png");
+}
+/****************************/
+/* Appliance Pop-up Prompts */
+/****************************/
+
+.app_prompt {
+	display: none;
+	background: #d0d0d0;
+	width: 40rem;
+	height: 30rem;
+	margin-top: -15rem;
+	margin-left: -20rem;
+	text-align: center;
+	z-index: 999;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+}
+
+.prompt_title {
+    font-size: 4em;
+    font-weight: 400;
+    color: #1c1f47;
+    margin-top: 0.5em;
+}
+
+.close {
+    position: absolute;
+    top: 3%;
+    right: 5%;
+    cursor:pointer;
+}
+
+.prompt_row1 {
+    text-align: center;
+    margin-top: 0.8em;
+}
+
+.prompt_row2 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.prompt_pic {
+	font-size: 1.8em;
+    width: 6em;
+    height: 6em;
+    margin: 0.25em;
+}
+
+.ok {
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    margin: 0;
+    padding: 0.5em;
+    font-size: 1em;
+    color: #4B5761;
+    background-color: #ffffff;
+    border-color: white;
+}
+
+.shadowed {
+	box-shadow: 0em 0em 0.5em;
+}
+
+#wm_prompt .prompt_title {
+	font-size: 3em;
+}
+
+/**************************************************/
+/* Bottom row containing Arrow and 'START LOGGING'*/
+/**************************************************/
+
+.bottomrow {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+#arrow {
+	width: 4.5em;
+	margin-left: 1em;
+	padding-left: 1.25em;
+}
+
+#nextpage {
+	background-color: #b7b7b7;
+	color: #3e3f52;
+	font-size: 1.5em;
+	padding: 0.25em;
+	margin-right:0.25em;
+	text-align: right; 
+	border-color: white;
+	float: right;
+	text-decoration: none;
+}
+
+#nextpage:hover {
+	background-color: white;
+	color: #8c9aaf;
+}
+/*____*/
