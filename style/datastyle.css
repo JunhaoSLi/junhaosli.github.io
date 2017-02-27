@@ -1,0 +1,381 @@
+body{
+	background-color: lightgrey;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1, p {
+	margin: 0;
+}
+
+button {
+	outline: 0;
+    cursor: pointer;
+}
+
+button:hover{
+	opacity: 0.85;
+}
+
+/*Text Elements*/
+#title {
+	text-align: center;
+	font-size: 4.8rem;
+	font-weight: 400;
+	color: #1c1f47;
+	margin-top: .1em;
+	margin-bottom: .4em;
+}
+
+/*Calendar and Appliances box properties*/
+#info_box_container{
+	text-align: center;
+	margin-bottom: 2.5em; 
+}
+
+.info_box{
+	display: inline-block;
+	margin: 5px auto;
+}
+
+/*Calendar styling*/
+#calendar{
+	margin: auto;
+	width: 21em;
+	height: 15em;
+	border: none;
+}
+
+#calendar_table {
+	background-color: #CDCEE5;
+	color: #1c1f47;
+	border-collapse: collapse;
+}
+
+#calendar th, #calendar td {
+	height: 2em;
+	width: 3em;
+	border: 0.1em solid #1c1f47;
+}
+
+#calendar td {
+	text-align: right;
+	vertical-align: top;
+}
+
+.active:hover {
+	background-color: #e8ecf2;
+	cursor: pointer;
+}
+
+#calendar_title {
+	background: #1c1f47;
+	color: #DBDCF5;
+}
+
+#week {
+	background-color: #868796;
+}
+
+.greyed {
+	background-color: #DBDCF5;
+	color: #383D8F;
+}
+
+/*Appliances graphs styling*/
+#appliances_graphs {
+	background-color: #CDCEE5;
+	margin: auto;
+	width: 21em;
+	height: 15.2em;
+	margin-right: 3.5em;
+	vertical-align: top;
+	border: 0.1em solid #1c1f47;
+}
+
+#appliance_div_title {
+	width: 100%;
+	padding: 0.5em 0em;
+	background: #1c1f47;
+	color: #DBDCF5;
+}
+
+#appliance_div_body {
+	text-align: left;
+	padding: 0.8em 4.2em;
+}
+
+.app_pic {
+	display: inline-block;
+	padding: 0.3em 0.5em;
+	height: 5em;
+	width: 5em;
+	cursor: pointer;
+}
+
+
+/*Graph wrappers and graphs styling*/
+.graph_wrapper {
+	position: relative;
+	vertical-align: top;
+}
+
+.corner_graph {
+	font-size: 1rem;
+	width: 21.2em;
+	height: 15.4em;
+	vertical-align: top;
+}
+
+#appliances_graph {
+	margin-right: 3.5em;
+}
+
+#calendar_graph { /* Needed to overcome inline-block spacing */
+	margin-right: -0.2em;
+}
+
+.hidden {
+	display: none;
+}
+
+.displayed_inline_block {
+	display: inline-block;
+}
+
+.close {
+	position: absolute;
+	font-size: 2em;
+	left: 9.5em;
+	top: 0;
+}
+
+
+/*Monthly Graph Properties*/
+#graph_container{
+	text-align: center;
+	width: 100%;
+}
+
+#graphs {
+	display: block;
+	margin: 0 auto;
+	height: 25em;
+	padding: 0;
+	box-shadow: 20 2px 40px black;
+}
+
+#graph_img{
+	display: block;		
+	margin: 0 auto;
+	height: 25em;
+	width: 45em;
+}
+
+#monthly_graph{
+  	/*position: relative; */
+	margin: 1.1em auto;
+	padding: 0;
+	background: transparent;
+	text-align: center;
+}
+
+#monthly_graph caption{
+	text-align: center;
+	caption-side: top;
+	width: 20em;
+	position: relative;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#monthly_graph tr, #monthly_graph th, #monthly_graph td { 
+	position: absolute;
+	bottom: 0; 
+	width: 20em; 
+	z-index: 2;
+	margin: 0; 
+	padding: 0;
+	text-align: center;
+}
+
+/*#monthly_graph td {
+  transition: all .3s ease;
+  
+  &:hover {
+    background-color: desaturate(#85144b, 100);
+    opacity: .9;
+    color: white;
+  }
+}*/
+
+#monthly_graph thead tr {
+	left: 100%; 
+	top: 50%; 
+	bottom: auto;
+	margin: -2.5em 0 0 5em;
+}
+#monthly_graph thead th {
+	width: 7.5em; 
+	height: auto; 
+	padding: 0.5em 1em;
+}
+
+#monthly_graph thead th.national_average {
+	top: 0; 
+	left: 0; 
+	line-height: 2;
+}
+#monthly_graph thead th.user_average {
+	top: 2.75em; 
+	line-height: 2;
+	left: 0; 
+}
+
+#monthly_graph #jan{
+	left: 0em;
+}
+#monthly_graph #feb{
+	left: 5em;
+}
+#monthly_graph #mar{
+	left: 10em;
+}
+#monthly_graph #apr{
+	left: 15em;
+}
+#monthly_graph #may{
+	left: 20em;
+}
+#monthly_graph #june{
+	left: 25em;
+}
+#monthly_graph #july{
+	left: 30em;
+}
+#monthly_graph #aug{
+	left: 35em;
+}
+#monthly_graph #sept{
+	left: 40em;
+}
+#monthly_graph #oct{
+	left: 45em;
+}
+#monthly_graph #nov{
+	left: 50em;
+}
+#monthly_graph #dec{
+	left: 55em;
+}
+
+#monthly_graph tbody th {
+	bottom: -1.75em; 
+	vertical-align: top;
+	font-weight: normal; color: #333;
+}
+#monthly_graph .bar {
+	position: absolute;
+	/*width: 60px; */
+	border: 1px solid; 
+	border-bottom: none; 
+	color: #FFF;
+}
+#monthly_graph .bar p {
+	margin: 0 0 0.5em 0; 
+	padding: 0;
+	opacity: 0.8;
+}
+#monthly_graph .nat_bar {
+  left: 7.5em; 
+  width: 1.5em;
+  margin-left: 1em;
+  background-color: cyan;
+  border-color: transparent;
+}
+#monthly_graph .user_bar {
+	left: 10em; 
+	width: 1.5em;
+	background-color: darkblue;
+	border-color: transparent;
+}
+
+
+.time_frame {
+	background-color: #9a9fa8;
+	display: inline-block;
+	width: 22em;
+	height: 3em;
+	margin: 2em 0.1em 0.1em;
+	border: none;
+    box-shadow: 0 0 0.1em #888888;
+}
+
+#ticks {
+	position: relative; 
+	width: 10em; 
+	height: 50em; 
+	z-index: 1;
+	margin-bottom: -300px;
+	font-size: 10px;
+	font-family: "fira-sans-2", Verdana, sans-serif;
+}
+
+/*Bottom Row*/
+#bottomrow{
+	margin-top: 4em;
+	margin-right: 0.5em;
+	margin-bottom: 1em;
+}
+
+#nextpage {
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	text-align: right; 
+	font-size: 1.5em;
+	float: right;
+	background-color: #3e3f52;
+	padding: 0.25em;
+	border-color: white;
+	margin-top: 2em;
+	margin-right: 1em;
+}
+
+#arrow {
+	float: left;
+	font-size: 1.5em; 	
+	margin-top: 2em;
+	margin-left: 1em;
+}
+
+.dotstyle ul {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+}
+
+.dotstyle li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0 16px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+}
+
+.dotstyle li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+	background-color: #fff;
+	background-color: rgba(255,255,255,0.3);
+	text-indent: -999em;
+	cursor: pointer; /* make the text accessible to screen readers */
+	position: absolute;
+}
