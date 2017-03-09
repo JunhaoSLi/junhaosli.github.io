@@ -1,3 +1,11 @@
 # Website for EECS 330 course, Winter 2017 (Team 水)
 
-temporarily hosting using my github domain
+Next steps:
+
+Add prompt divs and functionality to row 1 of the appliance buttons
+
+Style the prompt divs
+
+Add bar that shows current added appliances
+
+pls fix waterlogging.html divs
